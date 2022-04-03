@@ -15,7 +15,8 @@ https://cheesecakeassassin.github.io/santas-code-quiz/
 https://github.com/cheesecakeassassin/santas-code-quiz
 
 ## Working page screenshots 
-<img src="./assets/images/santas-code-quiz.png">
+<img src="./assets/images/santas-code-quiz-1.png">
+<img src="./assets/images/santas-code-quiz-2.png">
 
 ## Contributions
 ❤️Made by [Sebastian Santa]
