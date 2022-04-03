@@ -9,7 +9,7 @@ Painfully answer some questions, front-end is not my thing haha
 * JavaScript
 
 ## Website 
-https://santas-budget-tracker.herokuapp.com/
+https://cheesecakeassassin.github.io/santas-code-quiz/
 
 ## GitHub repository 
 https://github.com/cheesecakeassassin/santas-code-quiz
