@@ -26,20 +26,47 @@ var questions = [
     }
 ];
 
+var questionsEl = document.querySelector("#question");
+var choicesEl = document.querySelector("#choices");
+var timerEl = document.querySelector("#timer");
+var startButton = document.querySelector("#startButton");
+var startScreen = document.querySelector("#start-screen");
+var quiz = document.querySelector("#quiz");
+var feedbackEl = document.querySelector("#feedback");
+
+var currentQuestion = 0;
+var time = questions.length * 15;
+var timer;
+
 // Method that starts the quiz
 function startQuiz() {
-
     // Hide start screen
-    titleScreen.setAttribute("class", "hide");
+    startScreen.setAttribute("class", "hide");
   
     // Unhide questions section
-    quizScreen.setAttribute("class", "show");
+    quiz.setAttribute("class", "show");
   
     // Start timer
-    timerId = setInterval(tick, 1000);
+    timer = setInterval(tick, 1000);
   
     // Show starting time
-    timeEl.textContent = time;
+    timerEl.textContent = time;
   
     getQuestion();
+  }
+
+  function decrementTimer() {
+    // Update time
+    time--;
+    timerEl.textContent = time;
+  
+    // check if user ran out of time
+    if (time <= 0) {
+      quizEnd();
+    }
+  }
+
+  function quizFinished() {
+      clearInterval(timer);
+      quiz.setAttribute("class", "hide");
   }
