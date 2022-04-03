@@ -97,7 +97,7 @@
     margin: 0 20px 20px;
   }
   
-  #question {
+  #question-title {
     color: black;
     font-size: 3rem;
     margin-left: 25px;
@@ -119,6 +119,12 @@
     background: var(--tertiary);
     border-radius: 12px;
     margin-bottom: 20px;
+  }
+
+  #timer {
+      margin-left: 875px;
+      font-size: x-large;
+      display: inline-block;
   }
   
   .task-name {

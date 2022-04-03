@@ -10,6 +10,9 @@
     <body>
         <header>
             <h1 class="page-title">Santa's Code Quiz</h1>
+            <div id="timer">
+                Time: <span id="time">0</span>
+            </div>
         </header>
 
         <section id="title-section" class="show">
@@ -34,14 +37,13 @@
 
         <div class="hide">
             <main class="page-content" id="page-content">
-            <div class="question-wrapper">
-                <h1 id="question"></h1>
-                <section class="answer-wrapper">
+            <div class="question-wrapper" id="quiz">
+                <h1 id="question-title"></h1>
+                <!-- <section class="answer-wrapper">
                     <button class="btn" type="submit"></button>
-                </section>
-
-                
-                <p id="feedback"></p>
+                </section> -->
+                <div id="choices"></div>
+                <div id="feedback" class="feedback hide"></div>
             </div>
         </main>
         </div>

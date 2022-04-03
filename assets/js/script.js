@@ -60,9 +60,9 @@ function startQuiz() {
     time--;
     timerEl.textContent = time;
   
-    // check if user ran out of time
+    // Checks if user has run out of time
     if (time <= 0) {
-      quizEnd();
+      quizFinished();
     }
   }
 
